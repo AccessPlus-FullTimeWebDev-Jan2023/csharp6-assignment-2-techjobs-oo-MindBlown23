@@ -8,7 +8,7 @@ namespace TechJobsOO.Tests
 
         // Testing Location --------------------------------------------------------
 
-        /* TODO: Task 2: Remove this line to uncomment the tests
+        
 
         [TestMethod] //1
         public void Test_Second_Location_Constructor_Exists()
@@ -49,12 +49,13 @@ namespace TechJobsOO.Tests
             Assert.AreEqual("Desert", testLocation.Value, "Is Value set at time of declaration?");
             Assert.AreEqual("St. Louis", testLocation.Value = "St. Louis", "Not able to update value");
         }
-
+        
 
         [TestMethod] //3
         public void Test_Second_Location_Constructor_Initializes_Id()
         {
             //setup
+            Location Location = new Location("Desert");
             Location testLocation = new Location("Desert");
             Console.WriteLine(testLocation.Id);
 
@@ -65,7 +66,7 @@ namespace TechJobsOO.Tests
 
 
         // Testing CoreCompetency --------------------------------------------------------
-
+        
         [TestMethod] //4
         public void Test_CoreCompetency_Accessor_SetUp()
         {
@@ -117,7 +118,7 @@ namespace TechJobsOO.Tests
 
 
         // Testing PositionType --------------------------------------------------------
-
+        
         [TestMethod] //6
         public void Test_PositionType_Equals_Method_SetUp()
         {
@@ -178,7 +179,7 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(testPosition.Value.ToString(), "Quality Control", "ToString does not return same output as set value");
         }
 
-        TODO: Task 2: Remove this line to uncomment the tests */
+       
 
     }
 }
