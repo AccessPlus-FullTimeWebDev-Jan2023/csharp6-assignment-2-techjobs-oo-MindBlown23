@@ -49,42 +49,42 @@ namespace TechJobsOOAutoGraded6
             {
                 Name  = "Data not available";
             }
-            else
+            /*else
             {
                 JobFields += "Name: " + Name;
-            }
-            if (EmployerName == null)
+            }*/
+            if (EmployerName.Value == null || EmployerName.Value == "")
             {
                 EmployerName.Value = "Data not available";
             }
-            else
+           /* else
             {
                 JobFields += "Employer: " + EmployerName;
-            }
-            if (EmployerLocation == null)
+            }*/
+            if (EmployerLocation.Value == null || EmployerLocation.Value == "")
             {
                EmployerLocation.Value = "Data not available";
             }
-            else
+            /*else
             {
                 JobFields += "Location: " + EmployerLocation;
-            }
-            if (JobType == null)
+            }*/
+            if (JobType.Value == null || JobType.Value == "")
             {
                 JobType.Value = "Data not available";
             }
-            else
+            /*else
             {
                 JobFields += "Position Type: " + JobType;
-            }
-            if (JobCoreCompetency == null)
+            }*/
+            if (JobCoreCompetency.Value == null || JobCoreCompetency.Value == "")
             {
                 JobCoreCompetency.Value = "Data not available";
             }
-            else
+           /* else
             {
                 JobFields += "Core Competency: " + JobCoreCompetency;
-            }
+            }*/
             
              JobFields = Environment.NewLine + "ID: " + Id + Environment.NewLine + "Name: " + Name + Environment.NewLine + "Employer: " + EmployerName.Value + Environment.NewLine + "Location: " + EmployerLocation.Value + Environment.NewLine + "Position Type: " + JobType.Value + Environment.NewLine + "Core Competency: " + JobCoreCompetency.Value + Environment.NewLine;
 
